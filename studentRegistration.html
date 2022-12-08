@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: 'Josefin Sans', sans-serif;
+                
+            }
+            h2 {
+                color: crimson;
+                background-color:cadetblue;
+                text-align: center;
+                text-shadow: 5px 4px 7px rgb(8, 242, 250);
+            }
+            body{
+              background-color: rgb(234, 165, 179);
+            }
+        </style>    
+  </head>
+  <body>
+    <h2>Student Registration</h2>
+    <form>
+      <table style="margin-left: 100px;">
+        <tbody>
+          <tr>
+            <td><label>First Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Capital Letter Please"
+                required
+                autofocus
+                maxlength="10"
+              />
+              <td><label>Last Name</label></td>
+            <td><input type="text" placeholder="Capital Letter Please" /></td>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Father's Name</label></td>
+            <td><input type="text" placeholder="Capital Letter Please" /></td>
+            <td><label>Mother's Name</label></td>
+            <td><input type="text" placeholder="Capital Letter Please" /></td>
+          </tr>
+          
+          <tr> 
+            <td> <label> Select Gender </label> </td>
+            <td> 
+                <input type="radio" name="gender"> <label> Male</label>
+                <input type="radio" name="gender"> <label> Female </label>
+                <input type="radio" name="gender"> <label> Others </label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Age</label></td>
+            <td><input type="number" placeholder="Only Numbers" required /></td>
+            <td><label>Contact Number</label></td>
+            <td><input type="number" placeholder="Max 10 digits" /></td>
+          </tr>
+          <tr>
+            <td><label> Date of Birth </label></td>
+            <td><input type="date" /></td>
+            <td> <label> Profile Photo </label> </td>
+            <td> <input type="file"> </td>
+          </tr>
+         
+          <tr>
+            <td><label> Email ID </label></td>
+            <td><input type="email" placeholder="abc@gmail.com" /></td>
+            <td><label>Select Course  </label> </td>
+            <td> 
+                <select>
+                    <option>Computer Engineering </option>
+                    <option>Civil Engineering </option>
+                    <option>machanical Engineering  </option>
+                    <option>chemical Engineering </option>
+                    <option>medical Science</option>
+                    <option>Laws </option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>State</label></td>
+            <td><input type="text" value="MH" readonly /></td>
+            <td><label>Country</label></td>
+            <td><input type="text" value="India" disabled /></td>
+          </tr>
+          <tr>
+            <td> <label> Present Address </label> </td>
+            <td> <textarea rows="7" cols="50">  </textarea> </td>
+            <td> <label></label> </td>
+            <td><button type="submit">Register</button></td>
+            <td><button type="reset">Reset</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
